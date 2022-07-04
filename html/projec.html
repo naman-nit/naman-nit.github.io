@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Centre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('fit.jpg');
+            /* <img src="sports.jpg" alt="sports"> */
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 25px;
+            top: 20px;
+            /* border: solid green 2px; */
+            border-radius: 20px;
+
+        }
+
+        .left img {
+            display: inline-block;
+            width: 60px;
+        }
+
+        .left img:hover {
+            height: 50px;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 20px auto;
+            /* border: solid black 2px; */
+            height: 35px;
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            border: solid white 1px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: rgb(226, 220, 220);
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 25px 15px;
+            color: crimson;
+            font-family: baloo bhai;
+        }
+
+        .navbar li a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 10px 10px;
+            border: solid white 2px;
+            border-radius: 50px;
+            width: 35%;
+            display: block;
+            margin-top: 100px;
+            height: 300px;
+            text-align: center;
+            color: rgb(235, 224, 245);
+            font-size: x-large;
+            margin-left: 50px;
+            background-color: rgb(46, 45, 45);
+
+        }
+
+        .form {
+            padding: 10px 20px;
+            margin: 1px;
+        }
+
+        .form-group input {
+            padding: 5px 10px;
+            margin: 20px auto;
+            width: 300px;
+            display: block;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">BMI Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email</button>
+        </div>
+        <div class="container">
+            Avail Membership at cheapest prize
+            <div class="form">
+                <form action="form.php">
+                    <div class="form-group">
+                        <input type="text" name="Name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="Contact Number" placeholder="Contact Number" required
+                            role="alertdialog">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Membership-plan" placeholder="Membership-plan" required>
+                    </div>
+                    <button class="btn">Submit</button>
+                    <button class="btn">Reset</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

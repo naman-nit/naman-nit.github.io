@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sub-head {
+    display: none;
+    background-color: black;
+    position: absolute;
+}
+.header li:hover .sub-head {
+    display: block;
+}
+.sub-head li {
+    margin-left: 0px;
+    padding: 5px;
+    text-align: center;
+}
+.sub-head li:hover {
+    background-color: rgba(124, 123, 123, 0.457);
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+
+.sub-head li:last-child{
+    border-bottom:none;
+}
